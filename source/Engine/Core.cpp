@@ -45,8 +45,12 @@ void Run() {
     u32 kHeld = hidKeysHeld();
     u32 kUp = hidKeysUp();
 
-    touchPosition touch;
+    touchPosition touch{};
     hidTouchRead(&touch);
+
+    circlePosition circlePos{};
+    hidCircleRead(&circlePos);
+    OnCirclePadEvent(circlePos);
 
     OnKeyDownEvent(kDown);
     OnKeyUpEvent(kUp);

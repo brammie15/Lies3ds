@@ -1,0 +1,61 @@
+{
+    "configurations": [
+        {
+            "name": "3DS",
+            "includePath": [
+                "${workspaceFolder}/include/**",
+                "${env:DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
+                "${env:DEVKITPRO}/devkitARM/lib/gcc/arm-none-eabi/**",
+                "${env:DEVKITPRO}/libctru/include/**",
+                "${env:DEVKITPRO}/portlibs/3ds/include/**"
+            ],
+            "defines": [
+                "_3DS"
+            ],
+            "compilerPath": "C://devkitpro/devkitARM/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-arm",
+            "compilerArgs": []
+        },
+        {
+            "name": "Switch",
+            "includePath": [
+                "${workspaceFolder}/include/**",
+                "${env:DEVKITPRO}/devkitA64/aarch64-none-elf/include/**",
+                "${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/**",
+                "${env:DEVKITPRO}/libnx/include/**",
+                "${env:DEVKITPRO}/portlibs/switch/include/**"
+            ],
+            "defines": [
+                "__SWITCH__",
+                "__BSD_VISIBLE"
+            ],
+            "compilerPath": "${env:DEVKITPRO}/devkitA64/bin/aarch64-none-elf-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "compilerArgs": []
+        },
+        {
+            "name": "Wii U",
+            "includePath": [
+                "${workspaceFolder}/include/**",
+                "${env:DEVKITPRO}/devkitPPC/lib/gcc/powerpc-eabi/**",
+                "${env:DEVKITPRO}/devkitPPC/powerpc-eabi/include/**",
+                "${env:DEVKITPRO}/wut/include/**",
+                "${env:DEVKITPRO}/portlibs/wiiu/**"
+            ],
+            "defines": [
+                "__WIIU__",
+                "__WUT__"
+            ],
+            "compilerPath": "${env:DEVKITPRO}/devkitPPC/bin/powerpc-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x86",
+            "compilerArgs": []
+        }
+    ],
+    "version": 4
+}
